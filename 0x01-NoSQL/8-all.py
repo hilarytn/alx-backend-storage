@@ -7,6 +7,7 @@
 """
 
 def list_all(mongo_collection):
+    """Return a list of documents"""
     if mongo_collection is not None:
         docs = mongo_collection.find()
         return [doc for doc in docs]
