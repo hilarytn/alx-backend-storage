@@ -9,7 +9,7 @@ from uuid import uuid4
 
 
 class Cache():
-    """ 
+    """
     store an instance of the Redis client 
     as a private variable 
     named _redis (using redis.Redis()) and 
@@ -22,10 +22,10 @@ class Cache():
         self._redis.flushdb()
 
     def store(self, data) -> str:
-        """
-        Create a store method that takes a 
-        data argument and returns a string.
-        """
+    """
+    Create a store method that takes a 
+    data argument and returns a string.
+    """
         id = str(uuid4())
         self._redis.set(id, data)
         return id
