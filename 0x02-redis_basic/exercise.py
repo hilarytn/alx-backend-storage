@@ -6,6 +6,8 @@ can be stored in Redis.
 Happy Coding!
 """
 from uuid import uuid4
+
+
 class Cache():
     """This class will cache data as parsed from the store method"""
     def __init__(self):
