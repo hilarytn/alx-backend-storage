@@ -6,6 +6,7 @@ can be stored in Redis.
 Happy Coding!
 """
 from uuid import uuid4
+import redis
 
 
 class Cache():
@@ -15,7 +16,6 @@ class Cache():
     flushdb"""
     def __init__(self):
         """Initialize the class"""
-        import redis
         self._redis = redis.Redis()
         self._redis.flushdb()
 
